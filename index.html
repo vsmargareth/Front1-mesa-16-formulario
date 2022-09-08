@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesa 16 formulário</title>
+</head>
+<body>
+  <div class="above-header ">
+    <p>20% de desconto em todos os produtos! 😎</p>
+  </div>
+  <header>
+    <div class="header-right">
+      <img src="/assets/logo.svg" alt="notebook with blue stripes">
+      <p>Loja Da Vanessa</p> 
+    </div>
+
+    <nav>
+      <a href="#">Contato</a>
+      <a href="#">Registrar-se</a>
+      <a href="#">Login</a>
+    </nav>
+  </header>
+
+  <form>
+    <h2>
+      Adicionar seu super-herói
+    </h2>
+    <h5>
+      Adicione seu personagem favorito completando as informações
+    </h5>
+
+    <fielset >
+      <div >
+        <label for="name">*Nome</label>
+        <input type="text" id="name">
+      </div>
+
+      <div >
+        <label for="especie">*Espécie</label>
+        <select id="especie">
+          <option value="sobrevivente-alienigena">sobrevivente alienígena</option>
+          <option value="soldados-tecnologicos">soldados tecnológicos</option>
+          <option value="acidentes-cientificos">Sobreviventes de acidentes científicos</option>
+          <option value="vigilantes">vigilantes</option>
+        </select>
+      </div>
+    </fielset>
+
+    <fielset >
+      <div>
+        <label for="Data de Nascimento"></label>
+        <input type="date">
+      </div>
+      <div>
+        <label for="Adicionar Foto"></label>
+        <input type="file">
+      </div>
+    </fielset>
+
+    <fieldset>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <div>
+        <div>
+          <label for="powers"> Poderes</label>
+
+          <input type="checkbox" name="" id="voar">
+          <label for="voar">Voar</label>
+          
+          <input type="checkbox" name="" id="Super-Inteligencia">
+          <label for="Super-Inteligencia">Super Inteligência</label>
+
+          <input type="checkbox" name="" id="Vista-raio-laser">
+          <label for="Vista-raio-laser">Vista de raiolaser</label>
+
+          <input type="checkbox" name="" id="Super-rico">
+          <label for="Super-rico">Super rico</label>
+
+          
+        </div>
+
+        <div class="line"></div>
+
+        <div>
+          <label for="">Tipo de personaje</label>
+
+          <input type="radio" name="" id="heroi">
+          <label for="heroi">Herói / Heroína</label>
+
+          <input type="radio" name="" id="vilao">
+          <label for="vilao">Vilão / Vilã</label>
+        </div>
+      </div>
+    </fieldset>
+
+    <button>Adicionar</button>
+    
+  </form>
+  <footer>
+    <p>
+      Todos os direitos reservados a FRONT END 1
+    </p>
+  </footer>
+</body>
+</html>

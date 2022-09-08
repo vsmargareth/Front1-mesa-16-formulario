@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Roboto&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+}
+
+:root{
+  font-size: 62.5%;
+
+  --ff-texting: 'inter', sans-serif;
+  --ff-secondary: 'Roboto', sans-serif;
+
+  --text_Light: #ffff;
+  --text_Dark: #000000;
+
+  --bg_primary: #00669F;
+  --bg_secondary: #1CD1B0;
+  --bg_tertiary: #001D2D;
+  --bg_light: #ffff;
+
+  --fs_body: 1.6rem;
+
+}
+
+body{
+  font-family: var(--ff-texting);
+  font-size: var(--fs_body);
+  background-color: var(--bg_primary);
+  color: var(--text_Light);
+  width: 100%;
+  /* max-width: 1440px; */
+}
+
+.above-header{
+  background-color: var(--bg_secondary);
+  color: var(--text_Dark);
+  padding: 0.3rem 2.1rem;
+  font-weight: 400;
+  font-family: var(--ff-secondary)
+}
+
+header{
+  gap: 1rem;
+  justify-content: space-between;
+  font-family: var(--ff-secondary)
+}
+
+.header-right{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+nav{
+  background-color: var(--bg_tertiary);
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+a{
+  text-decoration: none;
+  color: var(--text_Light);
+  font-family: var(--ff-secondary);
+  font-weight: 400;
+  padding: 1.1rem 3rem;
+
+}
