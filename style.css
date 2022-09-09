@@ -2,6 +2,7 @@
 *{
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 :root{
@@ -25,12 +26,13 @@
 body{
   font-family: var(--ff-texting);
   font-size: var(--fs_body);
-  background-color: var(--bg_primary);
+  background-color: var(--bg_light);
   color: var(--text_Light);
   width: 100%;
   /* max-width: 1440px; */
 }
 
+/* configuração header  */
 .above-header{
   background-color: var(--bg_secondary);
   color: var(--text_Dark);
@@ -42,7 +44,8 @@ body{
 header{
   gap: 1rem;
   justify-content: space-between;
-  font-family: var(--ff-secondary)
+  font-family: var(--ff-secondary);
+  background-color: var(--bg_primary);
 }
 
 .header-right{
@@ -68,3 +71,56 @@ a{
   padding: 1.1rem 3rem;
 
 }
+
+/* configuração FORM  */
+
+form{
+  max-width: 954px;
+  max-height: 832px;
+  background-color: var(--bg_primary);
+  margin: 4rem auto;
+  border-radius: 4.9rem;
+  text-align: center;
+  padding: 0 12.3rem;
+}
+
+form h2{
+  color: #FBFFFD;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 7.2rem;
+
+}
+
+form p{
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.fieldset-wrapper{
+  display: flex;
+  gap: 2.3rem;
+  margin-top: 1.5rem;
+ 
+}
+
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 2rem;
+  /* align-items: center; */
+}
+
+.input-box{
+  width: 34.3rem;
+  height: 6.3rem;
+  border: 1.53px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1.5rem;
+  margin: 1.5rem 0 ;
+}
+
+
+ 
