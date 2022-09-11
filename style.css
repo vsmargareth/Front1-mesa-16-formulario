@@ -29,6 +29,7 @@ body{
   background-color: var(--bg_light);
   color: var(--text_Light);
   width: 100%;
+  font-weight: 300;
   /* max-width: 1440px; */
 }
 
@@ -103,6 +104,7 @@ form p{
   display: flex;
   gap: 2.3rem;
   margin-top: 1.5rem;
+  border: none;
  
 }
 
@@ -112,8 +114,21 @@ form p{
   text-align: left;
   font-size: 2rem;
   /* align-items: center; */
+  /* justify-content: center; */
 }
 
+.file{
+  margin-top: 3.5rem;
+  color: var(--text_Dark);
+  /* background-color: #CECECE; */
+}
+
+ input[type=file]::-webkit-file-upload-button {
+   border: 1px solid grey;
+   border-radius: 5px;
+   background:#CECECE;
+   padding: 0.8rem 10rem 0.8rem 1rem;
+ }
 .input-box{
   width: 34.3rem;
   height: 6.3rem;
@@ -123,4 +138,65 @@ form p{
 }
 
 
- 
+textarea{
+  width: 34.3rem;
+  height: 32rem;
+  border-radius: 1.54rem;
+
+}
+
+textarea::placeholder{
+  font-family: 'Inter';
+  padding: 2rem 1rem;
+  color: #00000080;
+  font-size: 2rem;
+}
+
+.powers{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* justify-content: center; */
+  gap: 1.3rem;
+}
+
+.powers label:nth-child(1){
+  font-size: 2rem;
+  /* margin-bottom: 1.2rem; */
+}
+
+.powers input{
+  width: 2.4rem;
+  height: 2rem;
+  border: 1px solid #C4C4C4;
+  margin-right:2rem ;
+}
+
+
+.line{
+  width: 34.3rem;
+  height: 0rem;
+  border: 1px solid #CCCCCC;
+  margin-top: 3.3rem;
+  margin-bottom:2.1rem ;
+
+}
+
+button{
+  background-color: #1CD1B0;
+  border-radius: 2.3rem;
+  border: none;
+  font-size: 4.0rem;
+  font-weight: 700;
+  height: 8.7rem;
+  margin-bottom: 1.8rem;
+  margin-top: 4rem;
+  width: 46.6rem;
+}
+
+footer{
+  background-color: var(--bg_primary);
+  color: var(--text_Light);
+  text-align: center;
+  padding: 2.1rem;
+}
